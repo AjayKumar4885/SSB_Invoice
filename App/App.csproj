@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82C828F2-6036-424B-B7E9-05F51C8368F2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>App</RootNamespace>
+    <AssemblyName>App</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ConvertNumberToWord, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>SupportingDLL\ConvertNumberToWord.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlatButton">
+      <HintPath>..\..\..\softwares\JControls\FlatButton.dll</HintPath>
+    </Reference>
+    <Reference Include="JDragControl">
+      <HintPath>..\..\..\softwares\JControls\JDragControl.dll</HintPath>
+    </Reference>
+    <Reference Include="JMaterialTextbox">
+      <HintPath>..\..\..\softwares\JControls\JMaterialTextbox.dll</HintPath>
+    </Reference>
+    <Reference Include="JMetroTextBox">
+      <HintPath>..\..\..\softwares\JControls\JMetroTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="JThinButton">
+      <HintPath>..\..\..\softwares\JControls\JThinButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Article\ItemMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Article\ItemMaster.Designer.cs">
+      <DependentUpon>ItemMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\CustomersList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\CustomersList.Designer.cs">
+      <DependentUpon>CustomersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers\EditCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers\EditCustomer.Designer.cs">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomInvoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomInvoiceds.cs">
+      <DependentUpon>CustomInvoiceds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CustomInvoiceds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomInvoiceds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceCreate.Designer.cs">
+      <DependentUpon>InvoiceCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Invoice\InvoiceMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice\InvoiceMaster.Designer.cs">
+      <DependentUpon>InvoiceMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\RefillInkMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masters\RefillInkMaster.Designer.cs">
+      <DependentUpon>RefillInkMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartyMaster\PartyMasterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartyMaster\PartyMasterForm.Designer.cs">
+      <DependentUpon>PartyMasterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PerformaInvoice.cs">
+      <DependentUpon>PerformaInvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PerformaInvoice1.Designer.cs">
+      <DependentUpon>PerformaInvoice.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RptView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RptView.Designer.cs">
+      <DependentUpon>RptView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="ViewReportFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewReportFrm.Designer.cs">
+      <DependentUpon>ViewReportFrm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Article\ItemMaster.resx">
+      <DependentUpon>ItemMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\CustomersList.resx">
+      <DependentUpon>CustomersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers\EditCustomer.resx">
+      <DependentUpon>EditCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\InvoiceCreate.resx">
+      <DependentUpon>InvoiceCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice\InvoiceMaster.resx">
+      <DependentUpon>InvoiceMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masters\RefillInkMaster.resx">
+      <DependentUpon>RefillInkMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartyMaster\PartyMasterForm.resx">
+      <DependentUpon>PartyMasterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report\CustomInvoic - Copy.rdlc" />
+    <EmbeddedResource Include="Report\CustomInvoic.rdlc" />
+    <EmbeddedResource Include="Report\CustomInvoic1.rdlc" />
+    <EmbeddedResource Include="RptView.resx">
+      <DependentUpon>RptView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewReportFrm.resx">
+      <DependentUpon>ViewReportFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="CustomInvoice.xsc">
+      <DependentUpon>CustomInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="CustomInvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomInvoice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CustomInvoice.xss">
+      <DependentUpon>CustomInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="CustomInvoiceds.xsc">
+      <DependentUpon>CustomInvoiceds.xsd</DependentUpon>
+    </None>
+    <None Include="CustomInvoiceds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomInvoiceds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="CustomInvoiceds.xss">
+      <DependentUpon>CustomInvoiceds.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PerformaInvoice.xsc">
+      <DependentUpon>PerformaInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="PerformaInvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PerformaInvoice1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PerformaInvoice.xss">
+      <DependentUpon>PerformaInvoice.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Models.Article.datasource" />
+    <None Include="Properties\DataSources\Models.ArticleRS.datasource" />
+    <None Include="Properties\DataSources\Models.InvoiceOrderItems.datasource" />
+    <None Include="Properties\DataSources\Models.PartyMasterRS.datasource" />
+    <None Include="Properties\DataSources\Models.RefillInk.datasource" />
+    <None Include="Properties\DataSources\Models.RS_Customers.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{471e827c-48cb-4f89-99b6-35025b451c2b}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{62f36e7e-0485-4154-bc1c-e8dd69ba612e}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image\Logo %281%29 - Copy.jpg" />
+    <Content Include="image\Logo1.jpg" />
+    <Content Include="image\Logo1_old.jpg" />
+    <Content Include="image\logo_old.jpg" />
+    <Content Include="image\sign.gif" />
+    <Content Include="image\sign.jpg" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SupportingDLL\ConvertNumberToWord.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

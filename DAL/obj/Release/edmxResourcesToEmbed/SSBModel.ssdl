@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SSB_DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tbl_InvoiceItemDetails">
+    <Key>
+      <PropertyRef Name="InvoiceItemID" />
+    </Key>
+    <Property Name="InvoiceItemID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InvoiceNo" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ArtNo" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="ArtDesc" Type="varchar" MaxLength="250" />
+    <Property Name="WorkOrderDesc" Type="varchar" MaxLength="250" />
+    <Property Name="RefileInk" Type="varchar" MaxLength="50" />
+    <Property Name="Rate" Type="numeric" Precision="18" Scale="4" />
+    <Property Name="Quantity" Type="int" />
+    <Property Name="Amount" Type="numeric" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tbl_User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" />
+    <Property Name="Role" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblArticle">
+    <Key>
+      <PropertyRef Name="ArtId" />
+    </Key>
+    <Property Name="ArtId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ArtNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Desc" Type="varchar" MaxLength="250" />
+    <Property Name="WorkOrderDesc" Type="varchar" MaxLength="250" />
+    <Property Name="Rate" Type="float" />
+    <Property Name="Unit" Type="varchar" MaxLength="50" />
+    <Property Name="ImageName" Type="varchar" MaxLength="50" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="250" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="EditedOn" Type="datetime" />
+    <Property Name="EditedBy" Type="varchar" MaxLength="150" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblCustomers">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="CustomerCode" Type="varchar" MaxLength="50" />
+    <Property Name="CustomerName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="50" />
+    <Property Name="MobileNo" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EditedOn" Type="datetime" />
+    <Property Name="EditedBy" Type="varchar" MaxLength="50" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblInvoice">
+    <Key>
+      <PropertyRef Name="InvoiceId" />
+    </Key>
+    <Property Name="InvoiceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="InvoiceNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PartyNo" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="BankId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Unit" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceDate" Type="datetime" Nullable="false" />
+    <Property Name="InvoiceCurrency" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="InvoiceGrandQty" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="InvoiceGrandAmt" Type="numeric" Precision="18" Scale="2" />
+    <Property Name="Remark" Type="varchar" MaxLength="300" />
+    <Property Name="DeliveryTerms" Type="varchar" MaxLength="50" />
+    <Property Name="DeliveryType" Type="varchar" MaxLength="20" />
+    <Property Name="Port" Type="varchar" MaxLength="50" />
+    <Property Name="PaymentTerms" Type="varchar" MaxLength="250" />
+    <Property Name="DeliveryPeriod" Type="varchar" MaxLength="250" />
+    <Property Name="WODelivery" Type="varchar" MaxLength="250" />
+    <Property Name="Remarks" Type="varchar" MaxLength="250" />
+    <Property Name="WORemarks" Type="varchar(max)" />
+    <Property Name="Note" Type="varchar(max)" />
+    <Property Name="PartialShip" Type="varchar(max)" />
+    <Property Name="TransShipment" Type="varchar(max)" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="EditedBy" Type="varchar" MaxLength="50" />
+    <Property Name="EditedOn" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="tblPartyMaster">
+    <Key>
+      <PropertyRef Name="PartyId" />
+    </Key>
+    <Property Name="PartyId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PartyCode" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PartyName" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="ContactPerson" Type="varchar" MaxLength="250" Nullable="false" />
+    <Property Name="Address" Type="varchar(max)" />
+    <Property Name="Phone" Type="varchar" MaxLength="20" />
+    <Property Name="Fax" Type="varchar" MaxLength="50" />
+    <Property Name="Mobile" Type="varchar" MaxLength="20" />
+    <Property Name="Pager" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="150" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="150" />
+    <Property Name="CreatedOn" Type="datetime" />
+    <Property Name="EditedBy" Type="varchar" MaxLength="150" />
+    <Property Name="EditedOn" Type="datetime" />
+    <Property Name="IsActive" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SSB_DBModelStoreContainer">
+    <EntitySet Name="tbl_InvoiceItemDetails" EntityType="Self.tbl_InvoiceItemDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_User" EntityType="Self.tbl_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblArticle" EntityType="Self.tblArticle" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblCustomers" EntityType="Self.tblCustomers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblInvoice" EntityType="Self.tblInvoice" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPartyMaster" EntityType="Self.tblPartyMaster" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

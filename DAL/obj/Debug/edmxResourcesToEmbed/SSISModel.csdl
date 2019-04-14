@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SISDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="SISDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_User" EntityType="SISDBModel.tbl_User" />
+    <EntitySet Name="tblCustomers" EntityType="SISDBModel.tblCustomer" />
+    <EntitySet Name="tblPartyMasters" EntityType="SISDBModel.tblPartyMaster" />
+    <EntitySet Name="tblArticles" EntityType="SISDBModel.tblArticle" />
+    <EntitySet Name="tblInvoices" EntityType="SISDBModel.tblInvoice" />
+    <EntitySet Name="tbl_InvoiceItemDetails" EntityType="SISDBModel.tbl_InvoiceItemDetails" />
+  </EntityContainer>
+  <EntityType Name="tbl_User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="tblCustomer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="CustomerCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CustomerName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Country" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPerson" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EditedOn" Type="DateTime" Precision="3" />
+    <Property Name="EditedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tblPartyMaster">
+    <Key>
+      <PropertyRef Name="PartyId" />
+    </Key>
+    <Property Name="PartyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PartyCode" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PartyName" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="ContactPerson" Type="String" Nullable="false" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Fax" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Mobile" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Pager" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="EditedBy" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="EditedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblArticle">
+    <Key>
+      <PropertyRef Name="ArtId" />
+    </Key>
+    <Property Name="ArtId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ArtNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Desc" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="WorkOrderDesc" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Rate" Type="Double" />
+    <Property Name="Unit" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ImageName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ImagePath" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="EditedOn" Type="DateTime" Precision="3" />
+    <Property Name="EditedBy" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tblInvoice">
+    <Key>
+      <PropertyRef Name="InvoiceId" />
+    </Key>
+    <Property Name="InvoiceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PartyNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BankId" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Unit" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InvoiceDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="InvoiceCurrency" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InvoiceGrandQty" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="InvoiceGrandAmt" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Remark" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="false" />
+    <Property Name="DeliveryTerms" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DeliveryType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Port" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PaymentTerms" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="DeliveryPeriod" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="WODelivery" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Remarks" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="WORemarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Note" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="PartialShip" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="TransShipment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="EditedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EditedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_InvoiceItemDetails">
+    <Key>
+      <PropertyRef Name="InvoiceItemID" />
+    </Key>
+    <Property Name="InvoiceItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="InvoiceNo" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ArtNo" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="ArtDesc" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="WorkOrderDesc" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="RefileInk" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rate" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="Quantity" Type="Decimal" Precision="18" Scale="5" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="5" />
+  </EntityType>
+</Schema>
