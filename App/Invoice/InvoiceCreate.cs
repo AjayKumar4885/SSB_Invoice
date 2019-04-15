@@ -92,19 +92,19 @@ namespace App.Invoice
             dtorder.Columns.Add("Amount");
             dtorder.Columns.Add("Sequence");
             dtorder.Columns.Add("RefillsLinkId");
-            
+
         }
 
         private void FillRefileInk()
         {
             _objDalArticle = new DAL_Article();
             var result = GetRefileInkData();
-            result.Insert(0, new RefillInk() { RefillInkId = 0, RefillInkColor = "-- Select --" });
+            result.Insert(0, new RefillInk() { id = 0, RefillInkColor = "-- Select --" });
             if (result != null && result.Count > 0)
             {
                 cmbboxToAddRefileInk.DataSource = result;
                 cmbboxToAddRefileInk.DisplayMember = "RefillInkColor";
-                cmbboxToAddRefileInk.ValueMember = "RefillInkId";
+                cmbboxToAddRefileInk.ValueMember = "id";
             }
             cmbBoxArtNo.SelectedIndex = 0;
         }
@@ -114,9 +114,9 @@ namespace App.Invoice
             List<RefillInk> _lstRefileInk = new List<RefillInk>();
 
 
-            RefillInk _objBlack = new RefillInk() { RefillInkId = 1, RefillInkColor = "Black" }; _lstRefileInk.Add(_objBlack);
-            RefillInk _objRed = new RefillInk() { RefillInkId = 2, RefillInkColor = "Red" }; _lstRefileInk.Add(_objRed);
-            RefillInk _objGreen = new RefillInk() { RefillInkId = 3, RefillInkColor = "Green" }; _lstRefileInk.Add(_objGreen);
+            RefillInk _objBlack = new RefillInk() { id = 1, RefillInkColor = "Black" }; _lstRefileInk.Add(_objBlack);
+            RefillInk _objRed = new RefillInk() { id = 2, RefillInkColor = "Red" }; _lstRefileInk.Add(_objRed);
+            RefillInk _objGreen = new RefillInk() { id = 3, RefillInkColor = "Green" }; _lstRefileInk.Add(_objGreen);
 
             return _lstRefileInk;
 
@@ -243,7 +243,7 @@ namespace App.Invoice
                 lblArtId.Text = Convert.ToString(result.ArtId);
                 lblArtNoData.Text = result.ArtNo;
                 txtArtDesc.Text = result.Desc;
-               // txtBoxWorkOrderDesc.Text = result.WorkOrderDesc;
+                // txtBoxWorkOrderDesc.Text = result.WorkOrderDesc;
                 txtboxRate.Text = Convert.ToString(result.Rate);
 
             }
@@ -259,7 +259,7 @@ namespace App.Invoice
         {
             lblAmout.Text = Convert.ToString(CalcuateAmout());
         }
-      
+
         private void rdbtnCIF_CheckedChanged(object sender, EventArgs e)
         {
             //   rdbtnCIF.Checked = !rdbtnCIF.Checked;
@@ -304,7 +304,7 @@ namespace App.Invoice
             if (!string.IsNullOrWhiteSpace(txtBoxInvoiceNo.Text))
             {
                 RptView frmrpt = new RptView();
-                frmrpt.txthiddenInvoiceNum.Text =  txtBoxInvoiceNo.Text.Split('-')[1];
+                frmrpt.txthiddenInvoiceNum.Text = txtBoxInvoiceNo.Text.Split('-')[1];
                 frmrpt.Show();
             }
         }
@@ -345,7 +345,7 @@ namespace App.Invoice
         }
         private void btnFind_Click(object sender, EventArgs e)
         {
-            
+
         }
         #endregion
 
@@ -420,9 +420,9 @@ namespace App.Invoice
 
         }
 
-        private void btnCreate_Enter(object sender,KeyEventArgs e)
+        private void btnCreate_Enter(object sender, KeyEventArgs e)
         {
-            if(e.KeyCode== Keys.Enter)
+            if (e.KeyCode == Keys.Enter)
             {
                 CreateInvoiceDetails();
             }
@@ -630,7 +630,7 @@ namespace App.Invoice
                         dr["ArtId"] = item.ArtNo;
                         dr["ArtNo"] = item.ArtNo;
                         dr["Desc"] = item.ArtDesc;
-                       // dr["WorkOrderDesc"] = item.WorkOrderDesc;
+                        // dr["WorkOrderDesc"] = item.WorkOrderDesc;
                         dr["RefillsLink"] = item.RefileInk;
                         dr["Rate"] = item.Rate;
                         dr["Qty"] = item.Quantity;
@@ -776,7 +776,7 @@ namespace App.Invoice
         }
 
         private void jbtnAdd_Enter(object sender, KeyEventArgs e)
-            {
+        {
             if (e.KeyCode == Keys.Enter)
             {
                 AddItemDetails();
@@ -786,7 +786,7 @@ namespace App.Invoice
         private void jbtnAdd_Click(object sender, EventArgs e)
         {
             AddItemDetails();
-            
+
         }
 
         private void AddItemDetails()
@@ -814,7 +814,7 @@ namespace App.Invoice
                     dr["ArtId"] = lblArtId.Text;
                     dr["ArtNo"] = lblArtNoData.Text;
                     dr["Desc"] = txtArtDesc.Text;
-                   // dr["WorkOrderDesc"] = txtBoxWorkOrderDesc.Text;
+                    // dr["WorkOrderDesc"] = txtBoxWorkOrderDesc.Text;
                     dr["RefillsLink"] = ((Models.RefillInk)cmbboxToAddRefileInk.SelectedItem).RefillInkColor;
                     dr["Rate"] = txtboxRate.Text;
                     dr["Qty"] = txtboxQty.Text;

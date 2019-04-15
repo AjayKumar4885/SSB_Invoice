@@ -109,6 +109,18 @@
     <Property Name="EditedOn" Type="datetime" />
     <Property Name="IsActive" Type="bit" Nullable="false" />
   </EntityType>
+  <EntityType Name="tblRefillInk">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RefillInkColor" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+    <Property Name="ModifiedBy" Type="varchar" MaxLength="50" />
+    <Property Name="ModifiedOn" Type="datetime" />
+    <Property Name="IsActive" Type="bit" />
+  </EntityType>
   <EntityContainer Name="SSB_DBModelStoreContainer">
     <EntitySet Name="tbl_InvoiceItemDetails" EntityType="Self.tbl_InvoiceItemDetails" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_User" EntityType="Self.tbl_User" Schema="dbo" store:Type="Tables" />
@@ -116,5 +128,6 @@
     <EntitySet Name="tblCustomers" EntityType="Self.tblCustomers" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblInvoice" EntityType="Self.tblInvoice" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tblPartyMaster" EntityType="Self.tblPartyMaster" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblRefillInk" EntityType="Self.tblRefillInk" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

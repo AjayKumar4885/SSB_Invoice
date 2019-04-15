@@ -105,6 +105,9 @@
     <Compile Include="tblPartyMaster.cs">
       <DependentUpon>SSBModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="tblRefillInk.cs">
+      <DependentUpon>SSBModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="tbl_InvoiceItemDetails.cs">
       <DependentUpon>SSBModel.tt</DependentUpon>
     </Compile>

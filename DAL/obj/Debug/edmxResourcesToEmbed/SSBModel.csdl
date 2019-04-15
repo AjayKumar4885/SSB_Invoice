@@ -71,6 +71,7 @@
     <EntitySet Name="tblPartyMasters" EntityType="Self.tblPartyMaster" />
     <EntitySet Name="tblInvoices" EntityType="SSB_DBModel.tblInvoice" />
     <EntitySet Name="tbl_InvoiceItemDetails" EntityType="SSB_DBModel.tbl_InvoiceItemDetails" />
+    <EntitySet Name="tblRefillInks" EntityType="SSB_DBModel.tblRefillInk" />
   </EntityContainer>
   <EntityType Name="tblInvoice">
     <Key>
@@ -116,5 +117,17 @@
     <Property Name="Rate" Type="Decimal" Precision="18" Scale="4" />
     <Property Name="Quantity" Type="Int32" />
     <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="tblRefillInk">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RefillInkColor" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
   </EntityType>
 </Schema>

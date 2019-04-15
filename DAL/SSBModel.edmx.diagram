@@ -11,6 +11,7 @@
         <EntityTypeShape EntityType="SSB_DBModel.tblPartyMaster" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SSB_DBModel.tblInvoice" Width="1.5" PointX="10.5" PointY="0.75" />
         <EntityTypeShape EntityType="SSB_DBModel.tbl_InvoiceItemDetails" Width="1.5" PointX="8.625" PointY="0.75" />
+        <EntityTypeShape EntityType="SSB_DBModel.tblRefillInk" Width="1.5" PointX="0.75" PointY="5.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

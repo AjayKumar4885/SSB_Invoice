@@ -21,7 +21,7 @@ namespace DAL
         public string WorkOrderDesc { get; set; }
         public string RefileInk { get; set; }
         public Nullable<decimal> Rate { get; set; }
-        public int? Quantity { get; set; }
+        public Nullable<int> Quantity { get; set; }
         public Nullable<decimal> Amount { get; set; }
     }
 }

@@ -31,5 +31,6 @@ namespace DAL
         public DbSet<tblPartyMaster> tblPartyMasters { get; set; }
         public DbSet<tblInvoice> tblInvoices { get; set; }
         public DbSet<tbl_InvoiceItemDetails> tbl_InvoiceItemDetails { get; set; }
+        public DbSet<tblRefillInk> tblRefillInks { get; set; }
     }
 }

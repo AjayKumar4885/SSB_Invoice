@@ -114,6 +114,18 @@
           <Property Name="EditedOn" Type="datetime" />
           <Property Name="IsActive" Type="bit" Nullable="false" />
         </EntityType>
+        <EntityType Name="tblRefillInk">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="RefillInkColor" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedBy" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedOn" Type="datetime" Nullable="false" />
+          <Property Name="ModifiedBy" Type="varchar" MaxLength="50" />
+          <Property Name="ModifiedOn" Type="datetime" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
         <EntityContainer Name="SSB_DBModelStoreContainer">
           <EntitySet Name="tbl_InvoiceItemDetails" EntityType="Self.tbl_InvoiceItemDetails" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_User" EntityType="Self.tbl_User" Schema="dbo" store:Type="Tables" />
@@ -121,6 +133,7 @@
           <EntitySet Name="tblCustomers" EntityType="Self.tblCustomers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblInvoice" EntityType="Self.tblInvoice" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tblPartyMaster" EntityType="Self.tblPartyMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tblRefillInk" EntityType="Self.tblRefillInk" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -197,6 +210,7 @@
           <EntitySet Name="tblPartyMasters" EntityType="Self.tblPartyMaster" />
           <EntitySet Name="tblInvoices" EntityType="SSB_DBModel.tblInvoice" />
           <EntitySet Name="tbl_InvoiceItemDetails" EntityType="SSB_DBModel.tbl_InvoiceItemDetails" />
+          <EntitySet Name="tblRefillInks" EntityType="SSB_DBModel.tblRefillInk" />
         </EntityContainer>
         <EntityType Name="tblInvoice">
           <Key>
@@ -242,6 +256,18 @@
           <Property Name="Rate" Type="Decimal" Precision="18" Scale="4" />
           <Property Name="Quantity" Type="Int32" />
           <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="tblRefillInk">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="RefillInkColor" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedBy" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="ModifiedBy" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+          <Property Name="IsActive" Type="Boolean" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -361,6 +387,19 @@
                 <ScalarProperty Name="ArtNo" ColumnName="ArtNo" />
                 <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
                 <ScalarProperty Name="InvoiceItemID" ColumnName="InvoiceItemID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tblRefillInks">
+            <EntityTypeMapping TypeName="SSB_DBModel.tblRefillInk">
+              <MappingFragment StoreEntitySet="tblRefillInk">
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+                <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+                <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+                <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+                <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+                <ScalarProperty Name="RefillInkColor" ColumnName="RefillInkColor" />
+                <ScalarProperty Name="id" ColumnName="id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
