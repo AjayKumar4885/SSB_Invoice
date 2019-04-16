@@ -169,5 +169,13 @@ namespace App
             RptView rpt = new RptView();
             rpt.Show();
         }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Left = Top = 0;
+            Width = Screen.PrimaryScreen.WorkingArea.Width;
+            Height = Screen.PrimaryScreen.WorkingArea.Height;
+        }
     }
 }

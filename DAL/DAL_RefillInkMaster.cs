@@ -33,7 +33,7 @@ namespace DAL
                                          IsActive = x.IsActive,
                                          ModifiedBy = x.ModifiedBy,
                                          ModifiedOn = x.ModifiedOn
-                                     }).ToList();
+                                     }).OrderBy(x=>x.RefillInkColor).ToList();
 
                 }
 

@@ -17,6 +17,7 @@ namespace App.Invoice
     {
         DAL_PartyMaster _objDalPartyMaster;
         DAL_Article _objDalArticle;
+        DAL_RefillInkMaster _objRefillInk;
         DAL_Invoices _objInvoice;
         DataTable dtorder = new DataTable("dtOrderDetails");
         public string strInvoiceNo { get; set; }
@@ -97,8 +98,8 @@ namespace App.Invoice
 
         private void FillRefileInk()
         {
-            _objDalArticle = new DAL_Article();
-            var result = GetRefileInkData();
+            _objRefillInk = new DAL_RefillInkMaster();
+            var result = _objRefillInk.GetRefillInks(new RefillInk_RQ() { });//  GetRefileInkData();
             result.Insert(0, new RefillInk() { id = 0, RefillInkColor = "-- Select --" });
             if (result != null && result.Count > 0)
             {
@@ -840,6 +841,18 @@ namespace App.Invoice
                 MessageBox.Show("Please select item to add !!");
                 return;
             }
+        }
+
+        private void txtboxRate_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar))
+                e.Handled = true;
+        }
+
+        private void txtboxQty_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar))
+                e.Handled = true;
         }
     }
     public class ValidInvoice

@@ -31,7 +31,7 @@ namespace App.Invoice
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateInvoice));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.jbtnFind = new FlatButton.JFlatButton();
             this.cmbBoxUnit = new System.Windows.Forms.ComboBox();
@@ -51,6 +51,7 @@ namespace App.Invoice
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblArtId = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.jbtnAdd = new FlatButton.JFlatButton();
             this.cmbboxToAddRefileInk = new System.Windows.Forms.ComboBox();
             this.lblAmout = new System.Windows.Forms.Label();
             this.txtboxQty = new System.Windows.Forms.TextBox();
@@ -64,7 +65,6 @@ namespace App.Invoice
             this.label8 = new System.Windows.Forms.Label();
             this.lblArtNo = new System.Windows.Forms.Label();
             this.txtArtDesc = new System.Windows.Forms.TextBox();
-            this.jbtnAdd = new FlatButton.JFlatButton();
             this.cmbBoxArtNo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.grdvOrderItem = new System.Windows.Forms.DataGridView();
@@ -326,7 +326,7 @@ namespace App.Invoice
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 182F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 186F));
             this.tableLayoutPanel1.Controls.Add(this.jbtnAdd, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.cmbboxToAddRefileInk, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblAmout, 5, 1);
@@ -350,164 +350,6 @@ namespace App.Invoice
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1255, 67);
             this.tableLayoutPanel1.TabIndex = 35;
             // 
-            // cmbboxToAddRefileInk
-            // 
-            this.cmbboxToAddRefileInk.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbboxToAddRefileInk.FormattingEnabled = true;
-            this.cmbboxToAddRefileInk.Location = new System.Drawing.Point(540, 37);
-            this.cmbboxToAddRefileInk.Name = "cmbboxToAddRefileInk";
-            this.cmbboxToAddRefileInk.Size = new System.Drawing.Size(130, 26);
-            this.cmbboxToAddRefileInk.TabIndex = 10;
-            // 
-            // lblAmout
-            // 
-            this.lblAmout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblAmout.AutoSize = true;
-            this.lblAmout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmout.Location = new System.Drawing.Point(916, 34);
-            this.lblAmout.Name = "lblAmout";
-            this.lblAmout.Size = new System.Drawing.Size(151, 32);
-            this.lblAmout.TabIndex = 36;
-            this.lblAmout.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtboxQty
-            // 
-            this.txtboxQty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtboxQty.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxQty.Location = new System.Drawing.Point(787, 37);
-            this.txtboxQty.Name = "txtboxQty";
-            this.txtboxQty.Size = new System.Drawing.Size(122, 27);
-            this.txtboxQty.TabIndex = 12;
-            this.txtboxQty.TextChanged += new System.EventHandler(this.txtboxQty_TextChanged);
-            // 
-            // txtboxRate
-            // 
-            this.txtboxRate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtboxRate.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxRate.Location = new System.Drawing.Point(677, 37);
-            this.txtboxRate.Name = "txtboxRate";
-            this.txtboxRate.Size = new System.Drawing.Size(103, 27);
-            this.txtboxRate.TabIndex = 11;
-            this.txtboxRate.TextChanged += new System.EventHandler(this.txtboxRate_TextChanged);
-            // 
-            // lblArtNoData
-            // 
-            this.lblArtNoData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblArtNoData.AutoSize = true;
-            this.lblArtNoData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArtNoData.Location = new System.Drawing.Point(4, 34);
-            this.lblArtNoData.Name = "lblArtNoData";
-            this.lblArtNoData.Size = new System.Drawing.Size(175, 32);
-            this.lblArtNoData.TabIndex = 37;
-            this.lblArtNoData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label14
-            // 
-            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1074, 1);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(177, 16);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "Action";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label13
-            // 
-            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(916, 1);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(151, 16);
-            this.label13.TabIndex = 39;
-            this.label13.Text = "Amount";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label12
-            // 
-            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(787, 1);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(122, 16);
-            this.label12.TabIndex = 40;
-            this.label12.Text = "Quantity";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label11
-            // 
-            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(677, 1);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 16);
-            this.label11.TabIndex = 41;
-            this.label11.Text = "Rate";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(540, 1);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 16);
-            this.label10.TabIndex = 42;
-            this.label10.Text = "Refile Ink";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(186, 1);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(347, 16);
-            this.label8.TabIndex = 44;
-            this.label8.Text = "Art Desc";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lblArtNo
-            // 
-            this.lblArtNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblArtNo.AutoSize = true;
-            this.lblArtNo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblArtNo.Location = new System.Drawing.Point(4, 1);
-            this.lblArtNo.Name = "lblArtNo";
-            this.lblArtNo.Size = new System.Drawing.Size(175, 16);
-            this.lblArtNo.TabIndex = 45;
-            this.lblArtNo.Text = "Art No";
-            this.lblArtNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // txtArtDesc
-            // 
-            this.txtArtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtArtDesc.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArtDesc.Location = new System.Drawing.Point(186, 37);
-            this.txtArtDesc.Name = "txtArtDesc";
-            this.txtArtDesc.Size = new System.Drawing.Size(347, 27);
-            this.txtArtDesc.TabIndex = 8;
-            // 
             // jbtnAdd
             // 
             this.jbtnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -525,7 +367,7 @@ namespace App.Invoice
             this.jbtnAdd.ImageLeft = ((System.Drawing.Image)(resources.GetObject("jbtnAdd.ImageLeft")));
             this.jbtnAdd.ImageRight = null;
             this.jbtnAdd.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.jbtnAdd.Location = new System.Drawing.Point(1076, 38);
+            this.jbtnAdd.Location = new System.Drawing.Point(1072, 38);
             this.jbtnAdd.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.jbtnAdd.Name = "jbtnAdd";
             this.jbtnAdd.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
@@ -537,6 +379,166 @@ namespace App.Invoice
             this.jbtnAdd.TabIndex = 13;
             this.jbtnAdd.Click += new System.EventHandler(this.jbtnAdd_Click);
             this.jbtnAdd.KeyUp += new System.Windows.Forms.KeyEventHandler(this.jbtnAdd_Enter);
+            // 
+            // cmbboxToAddRefileInk
+            // 
+            this.cmbboxToAddRefileInk.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbboxToAddRefileInk.FormattingEnabled = true;
+            this.cmbboxToAddRefileInk.Location = new System.Drawing.Point(536, 37);
+            this.cmbboxToAddRefileInk.Name = "cmbboxToAddRefileInk";
+            this.cmbboxToAddRefileInk.Size = new System.Drawing.Size(130, 26);
+            this.cmbboxToAddRefileInk.TabIndex = 10;
+            // 
+            // lblAmout
+            // 
+            this.lblAmout.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAmout.AutoSize = true;
+            this.lblAmout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAmout.Location = new System.Drawing.Point(912, 34);
+            this.lblAmout.Name = "lblAmout";
+            this.lblAmout.Size = new System.Drawing.Size(151, 32);
+            this.lblAmout.TabIndex = 36;
+            this.lblAmout.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtboxQty
+            // 
+            this.txtboxQty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtboxQty.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxQty.Location = new System.Drawing.Point(783, 37);
+            this.txtboxQty.Name = "txtboxQty";
+            this.txtboxQty.Size = new System.Drawing.Size(122, 27);
+            this.txtboxQty.TabIndex = 12;
+            this.txtboxQty.TextChanged += new System.EventHandler(this.txtboxQty_TextChanged);
+            this.txtboxQty.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtboxQty_KeyPress);
+            // 
+            // txtboxRate
+            // 
+            this.txtboxRate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtboxRate.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxRate.Location = new System.Drawing.Point(673, 37);
+            this.txtboxRate.Name = "txtboxRate";
+            this.txtboxRate.Size = new System.Drawing.Size(103, 27);
+            this.txtboxRate.TabIndex = 11;
+            this.txtboxRate.TextChanged += new System.EventHandler(this.txtboxRate_TextChanged);
+            this.txtboxRate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtboxRate_KeyPress);
+            // 
+            // lblArtNoData
+            // 
+            this.lblArtNoData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblArtNoData.AutoSize = true;
+            this.lblArtNoData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArtNoData.Location = new System.Drawing.Point(4, 34);
+            this.lblArtNoData.Name = "lblArtNoData";
+            this.lblArtNoData.Size = new System.Drawing.Size(174, 32);
+            this.lblArtNoData.TabIndex = 37;
+            this.lblArtNoData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(1070, 1);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(181, 16);
+            this.label14.TabIndex = 38;
+            this.label14.Text = "Action";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(912, 1);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(151, 16);
+            this.label13.TabIndex = 39;
+            this.label13.Text = "Amount";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(783, 1);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(122, 16);
+            this.label12.TabIndex = 40;
+            this.label12.Text = "Quantity";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(673, 1);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(103, 16);
+            this.label11.TabIndex = 41;
+            this.label11.Text = "Rate";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(536, 1);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(130, 16);
+            this.label10.TabIndex = 42;
+            this.label10.Text = "Refile Ink";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(185, 1);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(344, 16);
+            this.label8.TabIndex = 44;
+            this.label8.Text = "Art Desc";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lblArtNo
+            // 
+            this.lblArtNo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblArtNo.AutoSize = true;
+            this.lblArtNo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblArtNo.Location = new System.Drawing.Point(4, 1);
+            this.lblArtNo.Name = "lblArtNo";
+            this.lblArtNo.Size = new System.Drawing.Size(174, 16);
+            this.lblArtNo.TabIndex = 45;
+            this.lblArtNo.Text = "Art No";
+            this.lblArtNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // txtArtDesc
+            // 
+            this.txtArtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtArtDesc.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtArtDesc.Location = new System.Drawing.Point(185, 37);
+            this.txtArtDesc.Name = "txtArtDesc";
+            this.txtArtDesc.Size = new System.Drawing.Size(344, 27);
+            this.txtArtDesc.TabIndex = 8;
             // 
             // cmbBoxArtNo
             // 
@@ -564,14 +566,14 @@ namespace App.Invoice
             this.grdvOrderItem.AllowUserToAddRows = false;
             this.grdvOrderItem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdvOrderItem.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdvOrderItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdvOrderItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grdvOrderItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdvOrderItem.Location = new System.Drawing.Point(18, 32);
             this.grdvOrderItem.Name = "grdvOrderItem";
@@ -589,7 +591,7 @@ namespace App.Invoice
             this.label15.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(4, 1);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(75, 27);
+            this.label15.Size = new System.Drawing.Size(73, 27);
             this.label15.TabIndex = 48;
             this.label15.Text = "Grand Total";
             // 
@@ -600,9 +602,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblGrandQty.AutoSize = true;
             this.lblGrandQty.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandQty.Location = new System.Drawing.Point(86, 1);
+            this.lblGrandQty.Location = new System.Drawing.Point(84, 1);
             this.lblGrandQty.Name = "lblGrandQty";
-            this.lblGrandQty.Size = new System.Drawing.Size(51, 27);
+            this.lblGrandQty.Size = new System.Drawing.Size(49, 27);
             this.lblGrandQty.TabIndex = 49;
             // 
             // lblGrandAmout
@@ -612,9 +614,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblGrandAmout.AutoSize = true;
             this.lblGrandAmout.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandAmout.Location = new System.Drawing.Point(144, 1);
+            this.lblGrandAmout.Location = new System.Drawing.Point(140, 1);
             this.lblGrandAmout.Name = "lblGrandAmout";
-            this.lblGrandAmout.Size = new System.Drawing.Size(227, 27);
+            this.lblGrandAmout.Size = new System.Drawing.Size(231, 27);
             this.lblGrandAmout.TabIndex = 50;
             // 
             // tableLayoutPanel2
@@ -623,7 +625,7 @@ namespace App.Invoice
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.70445F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.29555F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 232F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
             this.tableLayoutPanel2.Controls.Add(this.lblGrandQty, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblGrandAmout, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 0);
@@ -797,6 +799,7 @@ namespace App.Invoice
             // 
             // txtDeliveryPeriod
             // 
+            this.txtDeliveryPeriod.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtDeliveryPeriod.Location = new System.Drawing.Point(147, 93);
             this.txtDeliveryPeriod.Name = "txtDeliveryPeriod";
             this.txtDeliveryPeriod.Size = new System.Drawing.Size(332, 27);
@@ -814,6 +817,7 @@ namespace App.Invoice
             // 
             // txtPaymentTerms
             // 
+            this.txtPaymentTerms.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtPaymentTerms.Location = new System.Drawing.Point(149, 61);
             this.txtPaymentTerms.Name = "txtPaymentTerms";
             this.txtPaymentTerms.Size = new System.Drawing.Size(332, 27);
