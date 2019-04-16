@@ -499,7 +499,7 @@ namespace App.Invoice
                         {
                             Amount = Convert.ToDecimal(dr["Amount"]),
                             ArtDesc = Convert.ToString(dr["Desc"]),
-                            WorkOrderDesc = Convert.ToString(dr["WorkOrderDesc"]),
+                            //WorkOrderDesc = Convert.ToString(dr["WorkOrderDesc"]),
                             Quantity = Convert.ToInt32(dr["Qty"]),
                             ArtNo = Convert.ToString(dr["ArtNo"]),
                             Rate = Convert.ToDecimal(dr["Rate"]),

@@ -339,3 +339,4 @@ D:\Projects\SSB_Invoice\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 D:\Projects\SSB_Invoice\Models\obj\Debug\Models.csproj.CopyComplete
 D:\Projects\SSB_Invoice\Models\obj\Debug\Models.dll
 D:\Projects\SSB_Invoice\Models\obj\Debug\Models.pdb
+D:\Projects\SSB_Invoice\Models\obj\Debug\Models.csprojAssemblyReference.cache
