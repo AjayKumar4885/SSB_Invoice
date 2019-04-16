@@ -122,6 +122,8 @@ namespace App
 
         private DataSet GetDataOne()
         {
+
+            
             String constr = Convert.ToString(ConfigurationManager.AppSettings["RptConnection"]);
 
             //string constr = @"Data Source=.\Sql2005;Initial Catalog=Northwind;Integrated Security = true";

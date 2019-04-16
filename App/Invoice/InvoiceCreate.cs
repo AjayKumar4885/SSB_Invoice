@@ -305,7 +305,7 @@ namespace App.Invoice
             if (!string.IsNullOrWhiteSpace(txtBoxInvoiceNo.Text))
             {
                 RptView frmrpt = new RptView();
-                frmrpt.txthiddenInvoiceNum.Text = txtBoxInvoiceNo.Text.Split('-')[1];
+                frmrpt.txthiddenInvoiceNum.Text = txtBoxInvoiceNo.Text;
                 frmrpt.Show();
             }
         }

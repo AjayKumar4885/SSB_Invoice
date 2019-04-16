@@ -384,13 +384,12 @@ D:\Projects\SSB\App\App\obj\Debug\App.csproj.CoreCompileInputs.cache
 D:\Projects\SSB\App\App\obj\Debug\App.csproj.CopyComplete
 D:\Projects\SSB\App\App\obj\Debug\App.exe
 D:\Projects\SSB\App\App\obj\Debug\App.pdb
+D:\Projects\SSB_Invoice\App\bin\Debug\App.exe
 D:\Projects\SSB_Invoice\App\bin\Debug\SqlServerTypes\x64\msvcr120.dll
 D:\Projects\SSB_Invoice\App\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\Projects\SSB_Invoice\App\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 D:\Projects\SSB_Invoice\App\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
 D:\Projects\SSB_Invoice\App\bin\Debug\App.exe.config
-D:\Projects\SSB_Invoice\App\bin\Debug\App.exe
-D:\Projects\SSB_Invoice\App\bin\Debug\App.pdb
 D:\Projects\SSB_Invoice\App\bin\Debug\ConvertNumberToWord.dll
 D:\Projects\SSB_Invoice\App\bin\Debug\DAL.dll
 D:\Projects\SSB_Invoice\App\bin\Debug\FlatButton.dll
@@ -502,3 +501,4 @@ D:\Projects\SSB_Invoice\App\obj\Debug\App.csproj.CoreCompileInputs.cache
 D:\Projects\SSB_Invoice\App\obj\Debug\App.csproj.CopyComplete
 D:\Projects\SSB_Invoice\App\obj\Debug\App.exe
 D:\Projects\SSB_Invoice\App\obj\Debug\App.pdb
+D:\Projects\SSB_Invoice\App\bin\Debug\App.pdb

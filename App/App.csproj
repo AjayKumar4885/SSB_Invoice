@@ -94,6 +94,9 @@
     <Compile Include="Article\ItemMaster.Designer.cs">
       <DependentUpon>ItemMaster.cs</DependentUpon>
     </Compile>
+    <Compile Include="ButtonModified.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Customers\AddCustomer.cs">
       <SubType>Form</SubType>
     </Compile>

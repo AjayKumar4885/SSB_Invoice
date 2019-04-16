@@ -55,7 +55,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Blue;
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -126,14 +126,14 @@
             // 
             // jbtnLogin
             // 
-            this.jbtnLogin.BackColor = System.Drawing.Color.Blue;
-            this.jbtnLogin.BackgroundColor = System.Drawing.Color.Blue;
+            this.jbtnLogin.BackColor = System.Drawing.Color.DodgerBlue;
+            this.jbtnLogin.BackgroundColor = System.Drawing.Color.DodgerBlue;
             this.jbtnLogin.ButtonText = "Login";
             this.jbtnLogin.CausesValidation = false;
             this.jbtnLogin.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("jbtnLogin.ErrorImageLeft")));
             this.jbtnLogin.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("jbtnLogin.ErrorImageRight")));
-            this.jbtnLogin.FocusBackground = System.Drawing.Color.Empty;
-            this.jbtnLogin.FocusFontColor = System.Drawing.Color.Empty;
+            this.jbtnLogin.FocusBackground = System.Drawing.Color.DodgerBlue;
+            this.jbtnLogin.FocusFontColor = System.Drawing.Color.Gray;
             this.jbtnLogin.ForeColors = System.Drawing.Color.White;
             this.jbtnLogin.HoverBackground = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.jbtnLogin.HoverFontColor = System.Drawing.Color.Empty;
@@ -167,6 +167,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

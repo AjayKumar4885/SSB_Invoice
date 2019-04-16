@@ -31,7 +31,7 @@ namespace App.Invoice
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateInvoice));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.jbtnFind = new FlatButton.JFlatButton();
             this.cmbBoxUnit = new System.Windows.Forms.ComboBox();
@@ -51,7 +51,6 @@ namespace App.Invoice
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblArtId = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.jbtnAdd = new FlatButton.JFlatButton();
             this.cmbboxToAddRefileInk = new System.Windows.Forms.ComboBox();
             this.lblAmout = new System.Windows.Forms.Label();
             this.txtboxQty = new System.Windows.Forms.TextBox();
@@ -65,6 +64,7 @@ namespace App.Invoice
             this.label8 = new System.Windows.Forms.Label();
             this.lblArtNo = new System.Windows.Forms.Label();
             this.txtArtDesc = new System.Windows.Forms.TextBox();
+            this.jbtnAdd = new FlatButton.JFlatButton();
             this.cmbBoxArtNo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.grdvOrderItem = new System.Windows.Forms.DataGridView();
@@ -135,13 +135,13 @@ namespace App.Invoice
             // 
             // jbtnFind
             // 
-            this.jbtnFind.BackColor = System.Drawing.Color.Blue;
-            this.jbtnFind.BackgroundColor = System.Drawing.Color.Blue;
+            this.jbtnFind.BackColor = System.Drawing.Color.DodgerBlue;
+            this.jbtnFind.BackgroundColor = System.Drawing.Color.DodgerBlue;
             this.jbtnFind.ButtonText = "Find";
             this.jbtnFind.CausesValidation = false;
             this.jbtnFind.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("jbtnFind.ErrorImageLeft")));
             this.jbtnFind.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("jbtnFind.ErrorImageRight")));
-            this.jbtnFind.FocusBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.jbtnFind.FocusBackground = System.Drawing.Color.DodgerBlue;
             this.jbtnFind.FocusFontColor = System.Drawing.Color.White;
             this.jbtnFind.ForeColors = System.Drawing.Color.White;
             this.jbtnFind.HoverBackground = System.Drawing.Color.Empty;
@@ -301,6 +301,7 @@ namespace App.Invoice
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(20, 156);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1300, 137);
             this.groupBox2.TabIndex = 33;
@@ -326,8 +327,7 @@ namespace App.Invoice
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 186F));
-            this.tableLayoutPanel1.Controls.Add(this.jbtnAdd, 6, 1);
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 190F));
             this.tableLayoutPanel1.Controls.Add(this.cmbboxToAddRefileInk, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblAmout, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtboxQty, 4, 1);
@@ -341,6 +341,7 @@ namespace App.Invoice
             this.tableLayoutPanel1.Controls.Add(this.label8, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblArtNo, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtArtDesc, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.jbtnAdd, 6, 1);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(25, 57);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
@@ -350,41 +351,11 @@ namespace App.Invoice
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1255, 67);
             this.tableLayoutPanel1.TabIndex = 35;
             // 
-            // jbtnAdd
-            // 
-            this.jbtnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.jbtnAdd.BackColor = System.Drawing.Color.Blue;
-            this.jbtnAdd.BackgroundColor = System.Drawing.Color.Blue;
-            this.jbtnAdd.ButtonText = "Add";
-            this.jbtnAdd.CausesValidation = false;
-            this.jbtnAdd.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("jbtnAdd.ErrorImageLeft")));
-            this.jbtnAdd.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("jbtnAdd.ErrorImageRight")));
-            this.jbtnAdd.FocusBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.jbtnAdd.FocusFontColor = System.Drawing.Color.White;
-            this.jbtnAdd.ForeColors = System.Drawing.Color.White;
-            this.jbtnAdd.HoverBackground = System.Drawing.Color.Blue;
-            this.jbtnAdd.HoverFontColor = System.Drawing.Color.Empty;
-            this.jbtnAdd.ImageLeft = ((System.Drawing.Image)(resources.GetObject("jbtnAdd.ImageLeft")));
-            this.jbtnAdd.ImageRight = null;
-            this.jbtnAdd.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.jbtnAdd.Location = new System.Drawing.Point(1072, 38);
-            this.jbtnAdd.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.jbtnAdd.Name = "jbtnAdd";
-            this.jbtnAdd.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
-            this.jbtnAdd.PaddingRightPicture = new System.Windows.Forms.Padding(0);
-            this.jbtnAdd.RightPictureColor = System.Drawing.Color.Transparent;
-            this.jbtnAdd.Size = new System.Drawing.Size(68, 24);
-            this.jbtnAdd.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.Normal;
-            this.jbtnAdd.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
-            this.jbtnAdd.TabIndex = 13;
-            this.jbtnAdd.Click += new System.EventHandler(this.jbtnAdd_Click);
-            this.jbtnAdd.KeyUp += new System.Windows.Forms.KeyEventHandler(this.jbtnAdd_Enter);
-            // 
             // cmbboxToAddRefileInk
             // 
             this.cmbboxToAddRefileInk.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbboxToAddRefileInk.FormattingEnabled = true;
-            this.cmbboxToAddRefileInk.Location = new System.Drawing.Point(536, 37);
+            this.cmbboxToAddRefileInk.Location = new System.Drawing.Point(532, 37);
             this.cmbboxToAddRefileInk.Name = "cmbboxToAddRefileInk";
             this.cmbboxToAddRefileInk.Size = new System.Drawing.Size(130, 26);
             this.cmbboxToAddRefileInk.TabIndex = 10;
@@ -396,7 +367,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAmout.AutoSize = true;
             this.lblAmout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmout.Location = new System.Drawing.Point(912, 34);
+            this.lblAmout.Location = new System.Drawing.Point(908, 34);
             this.lblAmout.Name = "lblAmout";
             this.lblAmout.Size = new System.Drawing.Size(151, 32);
             this.lblAmout.TabIndex = 36;
@@ -407,7 +378,7 @@ namespace App.Invoice
             this.txtboxQty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtboxQty.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxQty.Location = new System.Drawing.Point(783, 37);
+            this.txtboxQty.Location = new System.Drawing.Point(779, 37);
             this.txtboxQty.Name = "txtboxQty";
             this.txtboxQty.Size = new System.Drawing.Size(122, 27);
             this.txtboxQty.TabIndex = 12;
@@ -419,7 +390,7 @@ namespace App.Invoice
             this.txtboxRate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtboxRate.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxRate.Location = new System.Drawing.Point(673, 37);
+            this.txtboxRate.Location = new System.Drawing.Point(669, 37);
             this.txtboxRate.Name = "txtboxRate";
             this.txtboxRate.Size = new System.Drawing.Size(103, 27);
             this.txtboxRate.TabIndex = 11;
@@ -435,7 +406,7 @@ namespace App.Invoice
             this.lblArtNoData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArtNoData.Location = new System.Drawing.Point(4, 34);
             this.lblArtNoData.Name = "lblArtNoData";
-            this.lblArtNoData.Size = new System.Drawing.Size(174, 32);
+            this.lblArtNoData.Size = new System.Drawing.Size(173, 32);
             this.lblArtNoData.TabIndex = 37;
             this.lblArtNoData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -445,9 +416,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1070, 1);
+            this.label14.Location = new System.Drawing.Point(1066, 1);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(181, 16);
+            this.label14.Size = new System.Drawing.Size(185, 16);
             this.label14.TabIndex = 38;
             this.label14.Text = "Action";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -458,7 +429,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(912, 1);
+            this.label13.Location = new System.Drawing.Point(908, 1);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(151, 16);
             this.label13.TabIndex = 39;
@@ -471,7 +442,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(783, 1);
+            this.label12.Location = new System.Drawing.Point(779, 1);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(122, 16);
             this.label12.TabIndex = 40;
@@ -484,7 +455,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(673, 1);
+            this.label11.Location = new System.Drawing.Point(669, 1);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(103, 16);
             this.label11.TabIndex = 41;
@@ -497,7 +468,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(536, 1);
+            this.label10.Location = new System.Drawing.Point(532, 1);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(130, 16);
             this.label10.TabIndex = 42;
@@ -510,9 +481,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(185, 1);
+            this.label8.Location = new System.Drawing.Point(184, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(344, 16);
+            this.label8.Size = new System.Drawing.Size(341, 16);
             this.label8.TabIndex = 44;
             this.label8.Text = "Art Desc";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -525,7 +496,7 @@ namespace App.Invoice
             this.lblArtNo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArtNo.Location = new System.Drawing.Point(4, 1);
             this.lblArtNo.Name = "lblArtNo";
-            this.lblArtNo.Size = new System.Drawing.Size(174, 16);
+            this.lblArtNo.Size = new System.Drawing.Size(173, 16);
             this.lblArtNo.TabIndex = 45;
             this.lblArtNo.Text = "Art No";
             this.lblArtNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -535,10 +506,40 @@ namespace App.Invoice
             this.txtArtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArtDesc.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArtDesc.Location = new System.Drawing.Point(185, 37);
+            this.txtArtDesc.Location = new System.Drawing.Point(184, 37);
             this.txtArtDesc.Name = "txtArtDesc";
-            this.txtArtDesc.Size = new System.Drawing.Size(344, 27);
+            this.txtArtDesc.Size = new System.Drawing.Size(341, 27);
             this.txtArtDesc.TabIndex = 8;
+            // 
+            // jbtnAdd
+            // 
+            this.jbtnAdd.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.jbtnAdd.BackColor = System.Drawing.Color.DodgerBlue;
+            this.jbtnAdd.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.jbtnAdd.ButtonText = "Add";
+            this.jbtnAdd.CausesValidation = false;
+            this.jbtnAdd.ErrorImageLeft = ((System.Drawing.Image)(resources.GetObject("jbtnAdd.ErrorImageLeft")));
+            this.jbtnAdd.ErrorImageRight = ((System.Drawing.Image)(resources.GetObject("jbtnAdd.ErrorImageRight")));
+            this.jbtnAdd.FocusBackground = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.jbtnAdd.FocusFontColor = System.Drawing.Color.White;
+            this.jbtnAdd.ForeColors = System.Drawing.Color.White;
+            this.jbtnAdd.HoverBackground = System.Drawing.Color.DodgerBlue;
+            this.jbtnAdd.HoverFontColor = System.Drawing.Color.White;
+            this.jbtnAdd.ImageLeft = ((System.Drawing.Image)(resources.GetObject("jbtnAdd.ImageLeft")));
+            this.jbtnAdd.ImageRight = null;
+            this.jbtnAdd.LeftPictureColor = System.Drawing.Color.Transparent;
+            this.jbtnAdd.Location = new System.Drawing.Point(1068, 38);
+            this.jbtnAdd.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.jbtnAdd.Name = "jbtnAdd";
+            this.jbtnAdd.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
+            this.jbtnAdd.PaddingRightPicture = new System.Windows.Forms.Padding(0);
+            this.jbtnAdd.RightPictureColor = System.Drawing.Color.Transparent;
+            this.jbtnAdd.Size = new System.Drawing.Size(107, 24);
+            this.jbtnAdd.SizeModeLeft = System.Windows.Forms.PictureBoxSizeMode.Normal;
+            this.jbtnAdd.SizeModeRight = System.Windows.Forms.PictureBoxSizeMode.Normal;
+            this.jbtnAdd.TabIndex = 13;
+            this.jbtnAdd.Click += new System.EventHandler(this.jbtnAdd_Click);
+            this.jbtnAdd.KeyUp += new System.Windows.Forms.KeyEventHandler(this.jbtnAdd_Enter);
             // 
             // cmbBoxArtNo
             // 
@@ -566,14 +567,14 @@ namespace App.Invoice
             this.grdvOrderItem.AllowUserToAddRows = false;
             this.grdvOrderItem.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdvOrderItem.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Blue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdvOrderItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdvOrderItem.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.grdvOrderItem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdvOrderItem.Location = new System.Drawing.Point(18, 32);
             this.grdvOrderItem.Name = "grdvOrderItem";
@@ -591,7 +592,7 @@ namespace App.Invoice
             this.label15.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(4, 1);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(73, 27);
+            this.label15.Size = new System.Drawing.Size(70, 27);
             this.label15.TabIndex = 48;
             this.label15.Text = "Grand Total";
             // 
@@ -602,9 +603,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblGrandQty.AutoSize = true;
             this.lblGrandQty.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandQty.Location = new System.Drawing.Point(84, 1);
+            this.lblGrandQty.Location = new System.Drawing.Point(81, 1);
             this.lblGrandQty.Name = "lblGrandQty";
-            this.lblGrandQty.Size = new System.Drawing.Size(49, 27);
+            this.lblGrandQty.Size = new System.Drawing.Size(48, 27);
             this.lblGrandQty.TabIndex = 49;
             // 
             // lblGrandAmout
@@ -614,9 +615,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblGrandAmout.AutoSize = true;
             this.lblGrandAmout.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandAmout.Location = new System.Drawing.Point(140, 1);
+            this.lblGrandAmout.Location = new System.Drawing.Point(136, 1);
             this.lblGrandAmout.Name = "lblGrandAmout";
-            this.lblGrandAmout.Size = new System.Drawing.Size(231, 27);
+            this.lblGrandAmout.Size = new System.Drawing.Size(235, 27);
             this.lblGrandAmout.TabIndex = 50;
             // 
             // tableLayoutPanel2
@@ -625,7 +626,7 @@ namespace App.Invoice
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.70445F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.29555F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 236F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 240F));
             this.tableLayoutPanel2.Controls.Add(this.lblGrandQty, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblGrandAmout, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 0);
@@ -638,7 +639,7 @@ namespace App.Invoice
             // 
             // btnCreate
             // 
-            this.btnCreate.BackColor = System.Drawing.Color.Blue;
+            this.btnCreate.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCreate.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.Color.White;
             this.btnCreate.Location = new System.Drawing.Point(1183, 95);
@@ -696,7 +697,7 @@ namespace App.Invoice
             // 
             // btnReset
             // 
-            this.btnReset.BackColor = System.Drawing.Color.Blue;
+            this.btnReset.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnReset.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.ForeColor = System.Drawing.Color.White;
             this.btnReset.Location = new System.Drawing.Point(999, 96);
@@ -709,7 +710,7 @@ namespace App.Invoice
             // 
             // btnPrint
             // 
-            this.btnPrint.BackColor = System.Drawing.Color.Blue;
+            this.btnPrint.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnPrint.Enabled = false;
             this.btnPrint.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrint.ForeColor = System.Drawing.Color.White;
@@ -732,7 +733,7 @@ namespace App.Invoice
             // 
             // btnCancle
             // 
-            this.btnCancle.BackColor = System.Drawing.Color.Blue;
+            this.btnCancle.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnCancle.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancle.ForeColor = System.Drawing.Color.White;
             this.btnCancle.Location = new System.Drawing.Point(1090, 96);

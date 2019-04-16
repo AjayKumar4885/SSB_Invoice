@@ -13,11 +13,17 @@ namespace App
 {
     public partial class Login : Form
     {
+        Button btnLoginHide = new Button();
         public Login()
         {
             InitializeComponent();
+            btnLoginHide.Click += new EventHandler(btnLoginHide_Click);
         }
 
+        private void btnLoginHide_Click(object sender, EventArgs e)
+        {
+            LoginValidate();
+        }
         private void btnReset_Click(object sender, EventArgs e)
         {
             ClearControls();
@@ -65,6 +71,10 @@ namespace App
 
         private void jbtnLogin_Click(object sender, EventArgs e)
         {
+            LoginValidate();
+        }
+        private void LoginValidate()
+        {
             if (IsAuthenticated())
             {
                 this.Hide();
@@ -72,6 +82,11 @@ namespace App
                 home.Closed += (s, args) => this.Close();
                 home.Show();
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.AcceptButton = btnLoginHide;
         }
     }
 }

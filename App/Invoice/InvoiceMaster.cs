@@ -61,6 +61,8 @@ namespace App.Invoice
             bcol.HeaderText = " ";
             bcol.Text = "View";
             bcol.Name = "View";
+            bcol.DefaultCellStyle.BackColor = System.Drawing.Color.DodgerBlue;
+
             bcol.UseColumnTextForButtonValue = true;
             dgInvoiceList.Columns.Add(bcol);
 
@@ -68,11 +70,15 @@ namespace App.Invoice
             bcolToPrint.HeaderText = " ";
             bcolToPrint.Text = "Print";
             bcolToPrint.Name = "Print";
+            bcolToPrint.DefaultCellStyle.BackColor = System.Drawing.Color.DodgerBlue;
+
             bcolToPrint.UseColumnTextForButtonValue = true;
             dgInvoiceList.Columns.Add(bcolToPrint);
 
             DataGridViewButtonColumn bcolToEdit = new DataGridViewButtonColumn();
             bcolToEdit.HeaderText = " ";
+            bcolToEdit.DefaultCellStyle.BackColor = System.Drawing.Color.DodgerBlue;
+
             bcolToEdit.Text = "Edit";
             bcolToEdit.Name = "Edit";
             bcolToEdit.UseColumnTextForButtonValue = true;
