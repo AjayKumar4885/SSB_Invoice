@@ -536,8 +536,7 @@ namespace App.Invoice
                         var resultUpdate = _objInvoice.UpdateInvoice(_invoice);
                         if (resultUpdate != null && !string.IsNullOrWhiteSpace(resultUpdate.MessageText))
                         {
-                            MessageBox.Show(resultUpdate.MessageText, "Successful", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
-
+                            MessageBox.Show(resultUpdate.MessageText);
                             txtBoxInvoiceNo.Text = resultUpdate.InvoiceNo;
                             btnPrint.Enabled = true;
                             //  ClearControl();
@@ -801,11 +800,15 @@ namespace App.Invoice
             //Check Duplicate Item in Order
             if (!string.IsNullOrWhiteSpace(lblArtId.Text) && !string.IsNullOrWhiteSpace(txtboxQty.Text))
             {
+                //string expression = " ArtId = '" + Convert.ToInt32(lblArtId.Text) + "'";
+                //if (dtorder.Select(expression).Count() > 0)
+                //{
+                //    MessageBox.Show("Selected Item is already added in order !!");
+                //    return;
+                //}
                 if (cmbboxToAddRefileInk.SelectedIndex == 0)
                 {
-                    MessageBox.Show("Please select refile Ink before adding item !!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-
-                    //MessageBox.Show("Please select refile Ink before adding item !!");
+                    MessageBox.Show("Please select refile Ink before adding item !!");
                     return;
                 }
                 int seq = Convert.ToInt32(dtorder.AsEnumerable().Max(row => row["Sequence"]));
@@ -837,14 +840,10 @@ namespace App.Invoice
             {
                 if (string.IsNullOrWhiteSpace(txtboxQty.Text))
                 {
-                    MessageBox.Show("Please enter item quantity !!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-
-                    //MessageBox.Show("Please enter item quantity !!");
+                    MessageBox.Show("Please enter item quantity !!");
                     return;
                 }
-                MessageBox.Show("Please select item to add !!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-
-                //MessageBox.Show("Please select item to add !!");
+                MessageBox.Show("Please select item to add !!");
                 return;
             }
         }
