@@ -838,8 +838,6 @@ namespace App.Invoice
                 if (string.IsNullOrWhiteSpace(txtboxQty.Text))
                 {
                     MessageBox.Show("Please enter item quantity !!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
-
-                    //MessageBox.Show("Please enter item quantity !!");
                     return;
                 }
                 MessageBox.Show("Please select item to add !!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
