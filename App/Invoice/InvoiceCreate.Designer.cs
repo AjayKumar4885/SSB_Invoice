@@ -327,7 +327,7 @@ namespace App.Invoice
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 109F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 128F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 157F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 198F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 202F));
             this.tableLayoutPanel1.Controls.Add(this.cmbboxToAddRefileInk, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.lblAmout, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtboxQty, 4, 1);
@@ -355,7 +355,7 @@ namespace App.Invoice
             // 
             this.cmbboxToAddRefileInk.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbboxToAddRefileInk.FormattingEnabled = true;
-            this.cmbboxToAddRefileInk.Location = new System.Drawing.Point(524, 37);
+            this.cmbboxToAddRefileInk.Location = new System.Drawing.Point(519, 37);
             this.cmbboxToAddRefileInk.Name = "cmbboxToAddRefileInk";
             this.cmbboxToAddRefileInk.Size = new System.Drawing.Size(130, 26);
             this.cmbboxToAddRefileInk.TabIndex = 10;
@@ -367,7 +367,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAmout.AutoSize = true;
             this.lblAmout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmout.Location = new System.Drawing.Point(900, 34);
+            this.lblAmout.Location = new System.Drawing.Point(895, 34);
             this.lblAmout.Name = "lblAmout";
             this.lblAmout.Size = new System.Drawing.Size(151, 32);
             this.lblAmout.TabIndex = 36;
@@ -378,7 +378,7 @@ namespace App.Invoice
             this.txtboxQty.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtboxQty.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxQty.Location = new System.Drawing.Point(771, 37);
+            this.txtboxQty.Location = new System.Drawing.Point(766, 37);
             this.txtboxQty.Name = "txtboxQty";
             this.txtboxQty.Size = new System.Drawing.Size(122, 27);
             this.txtboxQty.TabIndex = 12;
@@ -390,7 +390,7 @@ namespace App.Invoice
             this.txtboxRate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtboxRate.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtboxRate.Location = new System.Drawing.Point(661, 37);
+            this.txtboxRate.Location = new System.Drawing.Point(656, 37);
             this.txtboxRate.Name = "txtboxRate";
             this.txtboxRate.Size = new System.Drawing.Size(103, 27);
             this.txtboxRate.TabIndex = 11;
@@ -406,7 +406,7 @@ namespace App.Invoice
             this.lblArtNoData.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArtNoData.Location = new System.Drawing.Point(4, 34);
             this.lblArtNoData.Name = "lblArtNoData";
-            this.lblArtNoData.Size = new System.Drawing.Size(170, 32);
+            this.lblArtNoData.Size = new System.Drawing.Size(168, 32);
             this.lblArtNoData.TabIndex = 37;
             this.lblArtNoData.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -416,9 +416,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(1058, 1);
+            this.label14.Location = new System.Drawing.Point(1053, 1);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(193, 16);
+            this.label14.Size = new System.Drawing.Size(198, 16);
             this.label14.TabIndex = 38;
             this.label14.Text = "Action";
             this.label14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -429,7 +429,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(900, 1);
+            this.label13.Location = new System.Drawing.Point(895, 1);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(151, 16);
             this.label13.TabIndex = 39;
@@ -442,7 +442,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(771, 1);
+            this.label12.Location = new System.Drawing.Point(766, 1);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(122, 16);
             this.label12.TabIndex = 40;
@@ -455,7 +455,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(661, 1);
+            this.label11.Location = new System.Drawing.Point(656, 1);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(103, 16);
             this.label11.TabIndex = 41;
@@ -468,7 +468,7 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(524, 1);
+            this.label10.Location = new System.Drawing.Point(519, 1);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(130, 16);
             this.label10.TabIndex = 42;
@@ -481,9 +481,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(181, 1);
+            this.label8.Location = new System.Drawing.Point(179, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(336, 16);
+            this.label8.Size = new System.Drawing.Size(333, 16);
             this.label8.TabIndex = 44;
             this.label8.Text = "Art Desc";
             this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -496,7 +496,7 @@ namespace App.Invoice
             this.lblArtNo.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblArtNo.Location = new System.Drawing.Point(4, 1);
             this.lblArtNo.Name = "lblArtNo";
-            this.lblArtNo.Size = new System.Drawing.Size(170, 16);
+            this.lblArtNo.Size = new System.Drawing.Size(168, 16);
             this.lblArtNo.TabIndex = 45;
             this.lblArtNo.Text = "Art No";
             this.lblArtNo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -506,9 +506,9 @@ namespace App.Invoice
             this.txtArtDesc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtArtDesc.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtArtDesc.Location = new System.Drawing.Point(181, 37);
+            this.txtArtDesc.Location = new System.Drawing.Point(179, 37);
             this.txtArtDesc.Name = "txtArtDesc";
-            this.txtArtDesc.Size = new System.Drawing.Size(336, 27);
+            this.txtArtDesc.Size = new System.Drawing.Size(333, 27);
             this.txtArtDesc.TabIndex = 8;
             // 
             // jbtnAdd
@@ -528,7 +528,7 @@ namespace App.Invoice
             this.jbtnAdd.ImageLeft = ((System.Drawing.Image)(resources.GetObject("jbtnAdd.ImageLeft")));
             this.jbtnAdd.ImageRight = null;
             this.jbtnAdd.LeftPictureColor = System.Drawing.Color.Transparent;
-            this.jbtnAdd.Location = new System.Drawing.Point(1060, 38);
+            this.jbtnAdd.Location = new System.Drawing.Point(1055, 38);
             this.jbtnAdd.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.jbtnAdd.Name = "jbtnAdd";
             this.jbtnAdd.PaddingLeftPicture = new System.Windows.Forms.Padding(0);
@@ -592,7 +592,7 @@ namespace App.Invoice
             this.label15.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.Location = new System.Drawing.Point(4, 1);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(66, 27);
+            this.label15.Size = new System.Drawing.Size(63, 27);
             this.label15.TabIndex = 48;
             this.label15.Text = "Grand Total";
             // 
@@ -603,9 +603,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblGrandQty.AutoSize = true;
             this.lblGrandQty.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandQty.Location = new System.Drawing.Point(77, 1);
+            this.lblGrandQty.Location = new System.Drawing.Point(74, 1);
             this.lblGrandQty.Name = "lblGrandQty";
-            this.lblGrandQty.Size = new System.Drawing.Size(44, 27);
+            this.lblGrandQty.Size = new System.Drawing.Size(43, 27);
             this.lblGrandQty.TabIndex = 49;
             // 
             // lblGrandAmout
@@ -615,9 +615,9 @@ namespace App.Invoice
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblGrandAmout.AutoSize = true;
             this.lblGrandAmout.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGrandAmout.Location = new System.Drawing.Point(128, 1);
+            this.lblGrandAmout.Location = new System.Drawing.Point(124, 1);
             this.lblGrandAmout.Name = "lblGrandAmout";
-            this.lblGrandAmout.Size = new System.Drawing.Size(243, 27);
+            this.lblGrandAmout.Size = new System.Drawing.Size(247, 27);
             this.lblGrandAmout.TabIndex = 50;
             // 
             // tableLayoutPanel2
@@ -626,7 +626,7 @@ namespace App.Invoice
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.70445F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.29555F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 248F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 252F));
             this.tableLayoutPanel2.Controls.Add(this.lblGrandQty, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.lblGrandAmout, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.label15, 0, 0);

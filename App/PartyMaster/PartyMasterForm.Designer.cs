@@ -62,12 +62,20 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtBxSearhPartyName = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.lblPartyMasterHeader = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdvwPartyMaster)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.partyMasterRSBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // grdvwPartyMaster
             // 
+            this.grdvwPartyMaster.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.grdvwPartyMaster.AutoGenerateColumns = false;
             this.grdvwPartyMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdvwPartyMaster.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -75,7 +83,7 @@
             this.partyCodeDataGridViewTextBoxColumn,
             this.partyNameDataGridViewTextBoxColumn});
             this.grdvwPartyMaster.DataSource = this.partyMasterRSBindingSource;
-            this.grdvwPartyMaster.Location = new System.Drawing.Point(61, 103);
+            this.grdvwPartyMaster.Location = new System.Drawing.Point(15, 107);
             this.grdvwPartyMaster.MultiSelect = false;
             this.grdvwPartyMaster.Name = "grdvwPartyMaster";
             this.grdvwPartyMaster.Size = new System.Drawing.Size(259, 267);
@@ -109,7 +117,7 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(398, 36);
+            this.lblName.Location = new System.Drawing.Point(39, 32);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(47, 13);
             this.lblName.TabIndex = 1;
@@ -119,7 +127,7 @@
             // 
             this.lblPartyCode.AutoSize = true;
             this.lblPartyCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPartyCode.Location = new System.Drawing.Point(394, 70);
+            this.lblPartyCode.Location = new System.Drawing.Point(7, 64);
             this.lblPartyCode.Name = "lblPartyCode";
             this.lblPartyCode.Size = new System.Drawing.Size(81, 13);
             this.lblPartyCode.TabIndex = 2;
@@ -129,7 +137,7 @@
             // 
             this.lblPerson.AutoSize = true;
             this.lblPerson.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPerson.Location = new System.Drawing.Point(398, 103);
+            this.lblPerson.Location = new System.Drawing.Point(33, 99);
             this.lblPerson.Name = "lblPerson";
             this.lblPerson.Size = new System.Drawing.Size(54, 13);
             this.lblPerson.TabIndex = 3;
@@ -139,7 +147,7 @@
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.Location = new System.Drawing.Point(398, 139);
+            this.lblAddress.Location = new System.Drawing.Point(25, 136);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(60, 13);
             this.lblAddress.TabIndex = 4;
@@ -149,7 +157,7 @@
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(398, 200);
+            this.lblPhone.Location = new System.Drawing.Point(32, 199);
             this.lblPhone.Name = "lblPhone";
             this.lblPhone.Size = new System.Drawing.Size(51, 13);
             this.lblPhone.TabIndex = 5;
@@ -159,7 +167,7 @@
             // 
             this.lblMobile.AutoSize = true;
             this.lblMobile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMobile.Location = new System.Drawing.Point(398, 240);
+            this.lblMobile.Location = new System.Drawing.Point(31, 237);
             this.lblMobile.Name = "lblMobile";
             this.lblMobile.Size = new System.Drawing.Size(52, 13);
             this.lblMobile.TabIndex = 6;
@@ -170,7 +178,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(398, 281);
+            this.lblEmail.Location = new System.Drawing.Point(32, 284);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(45, 13);
             this.lblEmail.TabIndex = 7;
@@ -180,7 +188,7 @@
             // 
             this.lblFax.AutoSize = true;
             this.lblFax.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFax.Location = new System.Drawing.Point(658, 200);
+            this.lblFax.Location = new System.Drawing.Point(281, 199);
             this.lblFax.Name = "lblFax";
             this.lblFax.Size = new System.Drawing.Size(35, 13);
             this.lblFax.TabIndex = 9;
@@ -190,7 +198,7 @@
             // 
             this.lblPager.AutoSize = true;
             this.lblPager.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPager.Location = new System.Drawing.Point(658, 240);
+            this.lblPager.Location = new System.Drawing.Point(271, 237);
             this.lblPager.Name = "lblPager";
             this.lblPager.Size = new System.Drawing.Size(48, 13);
             this.lblPager.TabIndex = 10;
@@ -198,7 +206,7 @@
             // 
             // txtPartyName
             // 
-            this.txtPartyName.Location = new System.Drawing.Point(487, 36);
+            this.txtPartyName.Location = new System.Drawing.Point(100, 30);
             this.txtPartyName.Name = "txtPartyName";
             this.txtPartyName.Size = new System.Drawing.Size(390, 20);
             this.txtPartyName.TabIndex = 11;
@@ -206,21 +214,21 @@
             // txtPartyCode
             // 
             this.txtPartyCode.Enabled = false;
-            this.txtPartyCode.Location = new System.Drawing.Point(487, 67);
+            this.txtPartyCode.Location = new System.Drawing.Point(100, 61);
             this.txtPartyCode.Name = "txtPartyCode";
             this.txtPartyCode.Size = new System.Drawing.Size(150, 20);
             this.txtPartyCode.TabIndex = 12;
             // 
             // txtContactPerson
             // 
-            this.txtContactPerson.Location = new System.Drawing.Point(487, 100);
+            this.txtContactPerson.Location = new System.Drawing.Point(100, 96);
             this.txtContactPerson.Name = "txtContactPerson";
             this.txtContactPerson.Size = new System.Drawing.Size(390, 20);
             this.txtContactPerson.TabIndex = 13;
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(487, 136);
+            this.txtAddress.Location = new System.Drawing.Point(100, 133);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(390, 46);
@@ -228,42 +236,42 @@
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(487, 200);
+            this.txtPhone.Location = new System.Drawing.Point(100, 199);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(165, 20);
             this.txtPhone.TabIndex = 15;
             // 
             // txtMobile
             // 
-            this.txtMobile.Location = new System.Drawing.Point(487, 240);
+            this.txtMobile.Location = new System.Drawing.Point(100, 237);
             this.txtMobile.Name = "txtMobile";
             this.txtMobile.Size = new System.Drawing.Size(165, 20);
             this.txtMobile.TabIndex = 16;
             // 
             // txtFax
             // 
-            this.txtFax.Location = new System.Drawing.Point(712, 200);
+            this.txtFax.Location = new System.Drawing.Point(325, 199);
             this.txtFax.Name = "txtFax";
             this.txtFax.Size = new System.Drawing.Size(165, 20);
             this.txtFax.TabIndex = 17;
             // 
             // txtPager
             // 
-            this.txtPager.Location = new System.Drawing.Point(712, 240);
+            this.txtPager.Location = new System.Drawing.Point(325, 237);
             this.txtPager.Name = "txtPager";
             this.txtPager.Size = new System.Drawing.Size(165, 20);
             this.txtPager.TabIndex = 18;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(487, 274);
+            this.txtEmail.Location = new System.Drawing.Point(100, 277);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(390, 20);
             this.txtEmail.TabIndex = 19;
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(487, 347);
+            this.btnCreate.Location = new System.Drawing.Point(100, 355);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(75, 23);
             this.btnCreate.TabIndex = 20;
@@ -274,7 +282,7 @@
             // btnUpdate
             // 
             this.btnUpdate.Enabled = false;
-            this.btnUpdate.Location = new System.Drawing.Point(596, 347);
+            this.btnUpdate.Location = new System.Drawing.Point(209, 355);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 21;
@@ -285,7 +293,7 @@
             // btnDelete
             // 
             this.btnDelete.Enabled = false;
-            this.btnDelete.Location = new System.Drawing.Point(699, 347);
+            this.btnDelete.Location = new System.Drawing.Point(312, 355);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 22;
@@ -298,7 +306,7 @@
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblStatus.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblStatus.Location = new System.Drawing.Point(487, 313);
+            this.lblStatus.Location = new System.Drawing.Point(100, 316);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(41, 13);
             this.lblStatus.TabIndex = 24;
@@ -308,7 +316,7 @@
             // chckStatus
             // 
             this.chckStatus.AutoSize = true;
-            this.chckStatus.Location = new System.Drawing.Point(694, 67);
+            this.chckStatus.Location = new System.Drawing.Point(307, 61);
             this.chckStatus.Name = "chckStatus";
             this.chckStatus.Size = new System.Drawing.Size(56, 17);
             this.chckStatus.TabIndex = 25;
@@ -317,7 +325,7 @@
             // 
             // btnReset
             // 
-            this.btnReset.Location = new System.Drawing.Point(802, 347);
+            this.btnReset.Location = new System.Drawing.Point(415, 355);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(75, 23);
             this.btnReset.TabIndex = 26;
@@ -328,7 +336,7 @@
             // lblPartyId
             // 
             this.lblPartyId.AutoSize = true;
-            this.lblPartyId.Location = new System.Drawing.Point(487, 17);
+            this.lblPartyId.Location = new System.Drawing.Point(100, 8);
             this.lblPartyId.Name = "lblPartyId";
             this.lblPartyId.Size = new System.Drawing.Size(16, 13);
             this.lblPartyId.TabIndex = 27;
@@ -339,7 +347,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(58, 27);
+            this.label1.Location = new System.Drawing.Point(3, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 13);
             this.label1.TabIndex = 28;
@@ -347,14 +355,15 @@
             // 
             // txtBxSearhPartyName
             // 
-            this.txtBxSearhPartyName.Location = new System.Drawing.Point(61, 54);
+            this.txtBxSearhPartyName.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBxSearhPartyName.Location = new System.Drawing.Point(15, 54);
             this.txtBxSearhPartyName.Name = "txtBxSearhPartyName";
-            this.txtBxSearhPartyName.Size = new System.Drawing.Size(157, 20);
+            this.txtBxSearhPartyName.Size = new System.Drawing.Size(157, 22);
             this.txtBxSearhPartyName.TabIndex = 29;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(245, 54);
+            this.btnSearch.Location = new System.Drawing.Point(196, 54);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(75, 23);
             this.btnSearch.TabIndex = 30;
@@ -362,45 +371,96 @@
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
+            // lblPartyMasterHeader
+            // 
+            this.lblPartyMasterHeader.AutoSize = true;
+            this.lblPartyMasterHeader.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPartyMasterHeader.Location = new System.Drawing.Point(57, 19);
+            this.lblPartyMasterHeader.Name = "lblPartyMasterHeader";
+            this.lblPartyMasterHeader.Size = new System.Drawing.Size(99, 19);
+            this.lblPartyMasterHeader.TabIndex = 31;
+            this.lblPartyMasterHeader.Text = "Party Master";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Location = new System.Drawing.Point(61, 41);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1153, 460);
+            this.groupBox1.TabIndex = 32;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.lblName);
+            this.groupBox2.Controls.Add(this.lblPartyId);
+            this.groupBox2.Controls.Add(this.lblPartyCode);
+            this.groupBox2.Controls.Add(this.txtMobile);
+            this.groupBox2.Controls.Add(this.txtFax);
+            this.groupBox2.Controls.Add(this.lblPerson);
+            this.groupBox2.Controls.Add(this.txtPhone);
+            this.groupBox2.Controls.Add(this.txtPager);
+            this.groupBox2.Controls.Add(this.txtAddress);
+            this.groupBox2.Controls.Add(this.lblAddress);
+            this.groupBox2.Controls.Add(this.txtEmail);
+            this.groupBox2.Controls.Add(this.txtContactPerson);
+            this.groupBox2.Controls.Add(this.lblPhone);
+            this.groupBox2.Controls.Add(this.btnCreate);
+            this.groupBox2.Controls.Add(this.txtPartyCode);
+            this.groupBox2.Controls.Add(this.lblMobile);
+            this.groupBox2.Controls.Add(this.btnUpdate);
+            this.groupBox2.Controls.Add(this.btnReset);
+            this.groupBox2.Controls.Add(this.txtPartyName);
+            this.groupBox2.Controls.Add(this.lblEmail);
+            this.groupBox2.Controls.Add(this.btnDelete);
+            this.groupBox2.Controls.Add(this.chckStatus);
+            this.groupBox2.Controls.Add(this.lblPager);
+            this.groupBox2.Controls.Add(this.lblFax);
+            this.groupBox2.Controls.Add(this.lblStatus);
+            this.groupBox2.Location = new System.Drawing.Point(476, 20);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(512, 410);
+            this.groupBox2.TabIndex = 31;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Party Add\\Edit";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.txtBxSearhPartyName);
+            this.groupBox3.Controls.Add(this.grdvwPartyMaster);
+            this.groupBox3.Controls.Add(this.btnSearch);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Location = new System.Drawing.Point(28, 20);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(372, 410);
+            this.groupBox3.TabIndex = 32;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Party Search";
+            // 
             // PartyMasterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(939, 497);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtBxSearhPartyName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lblPartyId);
-            this.Controls.Add(this.btnReset);
-            this.Controls.Add(this.chckStatus);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnUpdate);
-            this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtPager);
-            this.Controls.Add(this.txtFax);
-            this.Controls.Add(this.txtMobile);
-            this.Controls.Add(this.txtPhone);
-            this.Controls.Add(this.txtAddress);
-            this.Controls.Add(this.txtContactPerson);
-            this.Controls.Add(this.txtPartyCode);
-            this.Controls.Add(this.txtPartyName);
-            this.Controls.Add(this.lblPager);
-            this.Controls.Add(this.lblFax);
-            this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblMobile);
-            this.Controls.Add(this.lblPhone);
-            this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.lblPerson);
-            this.Controls.Add(this.lblPartyCode);
-            this.Controls.Add(this.lblName);
-            this.Controls.Add(this.grdvwPartyMaster);
+            this.ClientSize = new System.Drawing.Size(1240, 497);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lblPartyMasterHeader);
             this.Name = "PartyMasterForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PartyMaster";
+            this.Load += new System.EventHandler(this.PartyMasterForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grdvwPartyMaster)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.partyMasterRSBindingSource)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -441,5 +501,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtBxSearhPartyName;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Label lblPartyMasterHeader;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

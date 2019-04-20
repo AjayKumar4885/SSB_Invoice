@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -470,10 +471,11 @@ namespace App.Invoice
         {
             try
             {
+                Thread.CurrentThread.CurrentCulture = new CultureInfo("en-IN");
                 Models.Invoice _invoice = new Models.Invoice();
 
                 _invoice.BankId = Convert.ToString(cmbboxBanks.SelectedValue);
-                _invoice.InvoiceCurrency = cmbBoxCurrency.Text;
+                _invoice.InvoiceCurrency = string.Format(cmbBoxCurrency.Text, CultureInfo.InvariantCulture);
                 _invoice.IsActive = true;
                 _invoice.CreatedBy = "System";
                 _invoice.CreatedOn = DateTime.Today;

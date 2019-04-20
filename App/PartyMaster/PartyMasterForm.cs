@@ -19,7 +19,7 @@ namespace App.PartyMaster
         public PartyMasterForm()
         {
             InitializeComponent();
-
+            this.Dock = DockStyle.Fill;
             FillPartyMaster(new Models.PartyMasterRQ() { });
         }
 
@@ -222,6 +222,11 @@ namespace App.PartyMaster
             {
 
             }
+        }
+
+        private void PartyMasterForm_Load(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

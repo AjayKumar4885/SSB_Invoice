@@ -29,48 +29,53 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.Table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource6 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.Table2BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PerformaInvoice = new App.PerformaInvoice();
+            this.Table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.btnViewRpt = new System.Windows.Forms.Button();
             this.btn_pdfview = new System.Windows.Forms.Button();
             this.table1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.performaInvoiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.txthiddenInvoiceNum = new System.Windows.Forms.TextBox();
             this.table1BindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.performaInvoiceBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.table1BindingSource3 = new System.Windows.Forms.BindingSource(this.components);
-            this.Table2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.Table1BindingSource)).BeginInit();
+            this.txthiddenInvoiceNum = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Table2BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PerformaInvoice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.performaInvoiceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.performaInvoiceBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Table2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // Table1BindingSource
+            // Table2BindingSource
             // 
-            this.Table1BindingSource.DataMember = "Table1";
-            this.Table1BindingSource.DataSource = this.PerformaInvoice;
+            this.Table2BindingSource.DataMember = "Table2";
+            this.Table2BindingSource.DataSource = this.PerformaInvoice;
             // 
             // PerformaInvoice
             // 
             this.PerformaInvoice.DataSetName = "PerformaInvoice";
             this.PerformaInvoice.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // Table1BindingSource
+            // 
+            this.Table1BindingSource.DataMember = "Table1";
+            this.Table1BindingSource.DataSource = this.PerformaInvoice;
+            // 
             // reportViewer1
             // 
-            reportDataSource1.Name = "DataSet2";
-            reportDataSource1.Value = this.Table2BindingSource;
-            reportDataSource2.Name = "DataSet1";
-            reportDataSource2.Value = this.Table1BindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource5.Name = "DataSet2";
+            reportDataSource5.Value = this.Table2BindingSource;
+            reportDataSource6.Name = "DataSet1";
+            reportDataSource6.Value = this.Table1BindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource5);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource6);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "App.Report.CustomInvoic.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(7, 12);
             this.reportViewer1.Name = "reportViewer1";
@@ -111,14 +116,6 @@
             this.performaInvoiceBindingSource.DataSource = this.PerformaInvoice;
             this.performaInvoiceBindingSource.Position = 0;
             // 
-            // txthiddenInvoiceNum
-            // 
-            this.txthiddenInvoiceNum.Location = new System.Drawing.Point(702, 50);
-            this.txthiddenInvoiceNum.Name = "txthiddenInvoiceNum";
-            this.txthiddenInvoiceNum.Size = new System.Drawing.Size(100, 20);
-            this.txthiddenInvoiceNum.TabIndex = 3;
-            this.txthiddenInvoiceNum.Visible = false;
-            // 
             // table1BindingSource2
             // 
             this.table1BindingSource2.DataMember = "Table1";
@@ -134,10 +131,13 @@
             this.table1BindingSource3.DataMember = "Table1";
             this.table1BindingSource3.DataSource = this.PerformaInvoice;
             // 
-            // Table2BindingSource
+            // txthiddenInvoiceNum
             // 
-            this.Table2BindingSource.DataMember = "Table2";
-            this.Table2BindingSource.DataSource = this.PerformaInvoice;
+            this.txthiddenInvoiceNum.Location = new System.Drawing.Point(621, 56);
+            this.txthiddenInvoiceNum.Name = "txthiddenInvoiceNum";
+            this.txthiddenInvoiceNum.Size = new System.Drawing.Size(100, 20);
+            this.txthiddenInvoiceNum.TabIndex = 3;
+            this.txthiddenInvoiceNum.Visible = false;
             // 
             // RptView
             // 
@@ -151,14 +151,14 @@
             this.Name = "RptView";
             this.Text = "RptView";
             this.Load += new System.EventHandler(this.RptView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Table1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table2BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PerformaInvoice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Table1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.performaInvoiceBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.performaInvoiceBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Table2BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,7 +176,7 @@
         private System.Windows.Forms.BindingSource table1BindingSource2;
         private System.Windows.Forms.BindingSource performaInvoiceBindingSource1;
         private System.Windows.Forms.BindingSource table1BindingSource3;
-        public System.Windows.Forms.TextBox txthiddenInvoiceNum;
         private System.Windows.Forms.BindingSource Table2BindingSource;
+        public System.Windows.Forms.TextBox txthiddenInvoiceNum;
     }
 }

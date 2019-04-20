@@ -3,8 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity.Validation;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace DAL
@@ -393,6 +395,7 @@ namespace DAL
                             intInvoiceId = intInvoiceId + 1;
                         }
                         string strInvoiceNo = "SSB-" + intMaxId;
+                        Thread.CurrentThread.CurrentCulture = new CultureInfo("en-IN");
 
                         _context.tblInvoices.Add(new tblInvoice
                         {
@@ -402,7 +405,7 @@ namespace DAL
                             BankId = _objCreateInvoice.BankId,
                             Unit = _objCreateInvoice.Unit,
                             InvoiceDate = _objCreateInvoice.InvoiceDate,
-                            InvoiceCurrency = _objCreateInvoice.InvoiceCurrency,
+                            InvoiceCurrency = string.Format(_objCreateInvoice.InvoiceCurrency, CultureInfo.InvariantCulture),
                             InvoiceGrandQty = Convert.ToDecimal(_objCreateInvoice.InvoiceGrandQty),
                             InvoiceGrandAmt = _objCreateInvoice.InvoiceGrandAmt,
                             Remark = _objCreateInvoice.Remark,
